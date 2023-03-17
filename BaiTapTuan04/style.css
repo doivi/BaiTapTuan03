@@ -1,3 +1,4 @@
+
 #warapper {
     display: flex;
     justify-content: center;
@@ -11,10 +12,11 @@
 
 #left {
     width: 90px;
-    height: 870px;
+    height: 920px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-right: 1px solid wheat;
 }
 
 #left_above {
@@ -34,6 +36,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 #setting {
@@ -43,12 +46,25 @@
 #center {
     position: relative;
     width: 910px;
+    border-right: 1px solid wheat;
+    margin-left: 45px;
 }
 
 #right {
     width: 440px;
 }
-
+#left_above  .item_one {
+    margin-top: 20px;
+}
+#left_above  .item_two {
+    margin-top: 50px;
+}
+#left_above  .item_three {
+    margin-top: 50px;
+    border: 1px solid white;
+    padding: 10px;
+    background-color: white;
+}
 .content_top {
     display: flex;
     justify-content: space-between;
@@ -58,11 +74,11 @@
     position: absolute;
     border: 1px solid red;
     height: 21px;
-    padding: 8px 18px;
+    padding: 8px 25px;
     border-radius: 20px;
     color: red;
-    right: 65px;
-    top: 10px;
+    right: 48px;
+    top: 24px;
 }
 
 .content_top_01 {
@@ -81,13 +97,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid violet;
-    background-color: violet;
+    border: 1px solid rgb(197, 30, 80);
+    background-color: rgb(197, 30, 80);
     border-radius: 20px;
     color: white;
     text-align: center;
     height: 22px;
     padding: 5px;
+}
+.content_top_01 .content_item .content_user .img_user {
+    background-color:white;
+    color: pink;
 }
 
 .content_top_01 .content_item .content_user img {
@@ -101,6 +121,11 @@
     position: relative;
     margin-bottom: 20px;
 }
+.img_biglist {
+    width: 860px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
 
 .img_big .list_name {
     position: absolute;
@@ -111,6 +136,7 @@
     background-color: grey;
     color: white;
     padding: 5px;
+    border-radius: 5px;
 }
 
 .img_big .btn_mic {
@@ -121,6 +147,154 @@
 }
 
 .img_small {
-    display: flex;
+  display: flex;
+  
+}
+.img_list {
+    border-radius: 8px;
+}
+.img_small .img_small_2 {
     position: relative;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    width: 280px;
+}
+
+.img_small .img_small_2 .list_namesmall {
+    position: absolute;
+    top: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    border: 1px solid grey;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+}
+.btn_mic_2 .btn_mic_img {
+    width: 30px;
+}
+.img_small .img_small_2 .btn_mic_2 {
+    position: absolute;
+    top: 0;
+    left: 220px;
+    margin-top: 8px; 
+
+}
+.content_footer .footer_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+}
+.footer_btn div {
+    margin-right: 10px;
+}
+ .footer_btn input {
+    height: 44px;
+    width: 80px;
+    background-color: red;
+    padding: 0px 30px;
+    border: none;
+ }
+ .footer_btn input::placeholder {
+    color: white;
+ }
+ .user_content_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .user_content_top  span { 
+    position: relative;
+    border-radius: 50%;
+    border: 1px  solid rgb(197, 30, 80) ;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    color: rgb(197, 30, 80);
+    background-color: pink;
+    right: 42px;
+ }
+ .user_content_top  input {
+    width: 60px;
+    height: 30px;
+    border: 1px solid rgb(197, 30, 80);
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+ }
+ .user_content_top  input::placeholder {
+    color: rgb(197, 30, 80);
+ }
+
+.user_item {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px 10px 50px;
+}
+.user_item p {
+    margin-left: 10px;
+    margin-right: 89px;
+}
+.user_item .user_one {
+    margin-right:115px ;
+}
+.user_item .user_two {
+    margin-right:134px ;
+}
+.user_item .user_three {
+    margin-right:128px ;
+}
+
+.user_item img {
+    margin-right: 10px;
+}
+.user_top {
+    border-bottom: 1px solid  wheat ;
+}
+.user_footer {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.user_footer h1 {
+    margin-top: 10px;
+}
+.user_chat {
+    display: flex;
+    align-items: center;
+}
+.user_chat .user_time {
+    margin-left: 16px;
+    color: grey;
+}
+.user_chat img {
+    padding-right: 16px;
+}
+.user_chat p {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px;
+}
+.user_footer_item .content_chat {
+        padding: 5px;
+        margin-left: 52px;
+        background-color: #f7f7f7;
+        border-radius: 6px;
+}
+.chat_input {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.chat_input input {
+    width: 80%;
+    outline: none;
+    border: none;
+    background-color: #f7f7f7;
+    padding: 15px 20px;
+    font-size: 16px;
+    margin-right: 10px;
 }
